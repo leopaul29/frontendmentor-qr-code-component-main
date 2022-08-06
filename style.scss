@@ -1,0 +1,84 @@
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+// main variables
+$mobile-size: 375px;
+$desktop-size: 1440px;
+
+$color-white: hsl(0, 0%, 100%);
+$color-light-gray: hsl(212, 45%, 89%);
+$color-grayish-blue: hsl(220, 15%, 55%);
+$color-dark-blue: hsl(218, 44%, 22%);
+
+// html
+body {
+    background-color: $color-light-gray;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 20px;
+    color: $color-dark-blue;
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    color: $color-grayish-blue;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+// card
+.card {
+    // attributes
+    background-color: $color-white;
+    width: 280px;
+    padding: 12px;
+    border-radius: 15px;
+    // display
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .card__header {
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .card__body {
+        // display
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        // attributes
+        width: 260px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
